@@ -69,8 +69,8 @@ const PostItem = ({ id, data }) => {
         {
           data.postedBy === getUser().username && (
             <div className="mb-2 text-right flex justify-end items-center space-x-2">
-              <button onClick={() => handleEdit(id)} type="button" className="text-gray-500 border rounded-lg border-gray-500 px-3 py-1 hover:text-gray-300 hover:border-gray-300">Edit</button>
-              <button onClick={() => handleRemove(id)} type="button" className="text-red-500 border rounded-lg border-red-500 px-3 py-1 hover:text-red-300 hover:border-red-300">Remove</button>
+              <button onClick={() => handleEdit(id)} type="button" className="text-white bg-purple-500 border rounded-lg border-purple-500 px-3 py-1 hover:bg-white hover:text-purple-500 hover:border-purple-500">EDIT</button>
+              <button onClick={() => handleRemove(id)} type="button" className="text-white bg-red-500 border rounded-lg border-red-500 px-3 py-1 hover:bg-white hover:text-red-500 hover:border-red-500">REMOVE</button>
             </div>
           )
         }
